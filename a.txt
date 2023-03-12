@@ -2,3 +2,78 @@ stament one
 statement two 
 statement three
 statement four
+
+==============================================================================================
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text
+$ git clone https://github.com/DheerajDR/abcd.git
+Cloning into 'abcd'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text
+$ cd abcd
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text/abcd (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text/abcd (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text/abcd (main)
+$ git add .
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text/abcd (main)
+$ git commit -m "added a third line"
+[main d23027c] added a third line
+ 1 file changed, 1 insertion(+)
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text/abcd (main)
+$ git push origin
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text/abcd (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DheerajDR/abcd.git
+   34c7eca..d23027c  main -> main
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text/abcd (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text/abcd (main)
+$ git pull origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 657 bytes | 131.00 KiB/s, done.
+From https://github.com/DheerajDR/abcd
+   d23027c..84a4776  main       -> origin/main
+Updating d23027c..84a4776
+Fast-forward
+ a.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Dheeraj@Dheeraj MINGW64 ~/Desktop/text/abcd (main)
+$
